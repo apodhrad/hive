@@ -56,6 +56,7 @@ func newHiveutilCommand() *cobra.Command {
 	cmd.AddCommand(version.NewVersionCommand())
 	cmd.AddCommand(clusterpool.NewClusterPoolCommand())
 	cmd.AddCommand(awsprivatelink.NewAWSPrivateLinkCommand())
+	cmd.AddCommand(LogsCommand())
 
 	return cmd
 }
